@@ -179,6 +179,207 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+
+<!--
+    NOTES: 
+
+    This section overlaps the section above and below it with negative margins pulling the sections toward itself.
+
+    1) on the section above this one, add a padding-bottom of 120px at 64rem (1024px) wide media query
+
+    2) on the section below this one, add padding top 120px at 37.5rem (600px) wide media query
+
+    This will create the space needed to account for the images overlapping their sections and allowing for more space so it doesn't get too cluttered.
+
+    There's also a couple options with this one when it comes to background colors on the sections themselves. The bubbles are cut off with overflow:hidden on the cs-wrapper parent div.  Ideally, you add background-color: #f7f7f7 to any section below this one for contrast since you dont just want these clipped bubbles in the middle of all that white. If you want the section below this stitch to also be white, remove the overflow:hidden from the cs-wrapper div that wraps the bubbles. This will allow them to overflow their container and can float in their full display size against both white backgrounds.
+-->
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1360">
+    <div class="cs-container">
+        <picture class="cs-picture cs-picture1">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 686, height: 656}) | webp %}">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 590, height: 680}) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 590, height: 680}) | webp %}" alt="White mountains at golden hour.">
+        </picture>
+        <div class="cs-content">
+            <h2 class="cs-title">Personalized Care for Your Growth and Healing</h2>
+            <p class="cs-text">
+                I’m passionate about helping younger adults who are navigating the ups and downs of life transitions, emotional struggles, and healing from past wounds. I understand how overwhelming it can be to face anxiety, depression, or the weight of unresolved issues, and I aim to create a warm, compassionate space where you can find clarity and peace. Many of the clients I work with are at pivotal moments in their lives, working to establish their own paths and identities, separate from the influences of those they grew up around. Whether you're dealing with anxiety, adjusting to major life changes, or healing from family of origin wounds and trauma, I'm here to provide a safe and supportive environment for every step of your journey.            
+            </p>
+        </div>
+        <picture class="cs-picture cs-picture2">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 686, height: 656}) | webp %}">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 590, height: 680}) | webp %}">
+            <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 590, height: 680}) | webp %}" alt="White mountains at sunset.">
+        </picture>
+    </div>
+    <!--
+        Since we cant use overflow:hidden on the section container to clip the bubbles when they overflow the edges we need to make a wrapper around the bubbles that are the same dimensions as the section container and add overflow: hidden to that element. We need to see the images overflow the section container, so this is the solution to that problem. 
+    
+    -->
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-346">
+    <picture class="cs-bg">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 375, height: 995}) | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+        <img decoding="async" src="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="pancake" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Working With Me</span>
+            <h2 class="cs-title">Compassionate Care Tailored to Your Needs</h2>
+            <p class="cs-text">
+                Together, we will identify your current challenges and utilize evidence-based therapeutic modalities to help you progress towards your goals. I aim to provide my clients with strategies they can make their own and feel confident in utilizing outside of sessions.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Individual Therapy</h3>
+                    <p class="cs-item-text">
+                        Weekly or bi-weekly sessions, in-person and virtual availability.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">EMDR</h3>
+                    <p class="cs-item-text">
+                        I am an EMDR trained therapist. EMDR is a powerful reprocessing tool effective in helping clients resolve trauma and rewire unhelpful belief systems.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Outdoor Offerings</h3>
+                    <p class="cs-item-text">
+                        Walk & talk sessions in the warm months or Cross Country Skiing sessions integrating EMDR in the winter.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Trauma Therapy</h3>
+                    <p class="cs-item-text">
+                        Helping clients understand the neurobiology of trauma while re-processing their traumatic experience.
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Learn More</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-1371">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Why Alpenglow Counseling?</span>
+            <h2 class="cs-title">Empathetic Support for Lasting Change</h2>
+            <p class="cs-text">
+                I take a client-centered approach, putting your needs and goals first. The therapeutic relationship we establish is fundamental in your growth process and I believe that my clients need to feel safe and comfortable to settle into their work.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <h3 class="cs-h3">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why1.svg" alt="icon" width="24" height="24">
+                    7 Years of Experience
+                </h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why2.svg" alt="icon" width="24" height="24">
+                    Vermont Licensed Clinical Mental Health Counselor
+                </h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why3.svg" alt="icon" width="24" height="24">
+                    EMDR Trained
+                </h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                </p>
+            </li>
+            <li class="cs-item-picture">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/amber-leaves.jpeg" | resize({width: 648, height: 856}) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/amber-leaves.jpeg" | resize({width: 630, height: 493}) | webp %}">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hand-shake.jpg" alt="people" width="590" height="418">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why4.svg" alt="icon" width="24" height="24">
+                    Unlimited Edits
+                </h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why5.svg" alt="icon" width="24" height="24">
+                    Web Design & Develop
+                </h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why6.svg" alt="icon" width="24" height="24">
+                    Google Analytics
+                </h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                </p>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Discover More</a>
+    </div>
+</section>
+                                
+
+                                
+                                
                                 
                                 
                                 

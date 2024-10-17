@@ -147,6 +147,7 @@
         display: inline-block;
         background-color: var(--primary);
         width: auto;
+        font-family: 'Montserrat', sans-serif;
         padding: 0 (30/16rem);
         text-decoration: none;
         text-transform: uppercase;
@@ -1561,28 +1562,26 @@ html {
         padding-block-end: (100/16rem);
     }
 }
-
 /*-- -------------------------- -->
-<---    Final Call To Action    -->
+<---            CTA             -->
 <--- -------------------------- -*/
 
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cta {
+    #cta-403 {
+        padding: var(--sectionPadding);
         position: relative;
-        padding: (50/16rem) 0;
+        background: linear-gradient(89deg, rgba(106, 66, 93, 0.10) 0.93%, rgba(106, 66, 93, 0.91) 73.67%, rgba(106, 66, 93, 0.90) 79.83%, #6A425D 92.29%);
 
-        .container {
-            text-align: center;
-        }
-
-        picture {
-            z-index: -2;
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            background-blend-mode: multiply;
+            display: block;
             position: absolute;
             top: 0;
             left: 0;
-            height: 100%;
-            width: 100%;
+            z-index: -1;
 
             img {
                 position: absolute;
@@ -1590,112 +1589,126 @@ html {
                 left: 0;
                 height: 100%;
                 width: 100%;
+                /* Makes img tag act as a background image */
                 object-fit: cover;
+                /* positions the image inside the parent */
+                object-position: 0% 30%;
             }
         }
 
-        .title {
-            position: relative;
-            margin-bottom: (36/16rem);
-            font-size: ~"min(9vw, 3rem)";
-            line-height: (58/48em);
-            font-weight: 900;
-            color: #fff;
-            text-align: center;
-        }
-
-        p {
-            opacity: 1;
-            margin: auto;
-            margin-bottom: (36/16rem);
-            max-width: (598/16rem);
-            width: 96%;
-            color: #fff;
-            text-align: center;
-        }
-
-        &:before {
-            z-index: -1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            opacity: 0.7;
-            display: block;
-            background: #000;
-            height: 100%;
+        .cs-container {
             width: 100%;
-        }
-    }
-}
-
-/* Small Desktop */
-@media only screen and (min-width: 64rem) {
-    #cta {
-        padding: (168/16rem) 0;
-    }
-}
-
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-    #cta {
-        position: relative;
-        margin-top: (100/16rem);
-        .container {
+            max-width: (1280/16rem);
             margin: auto;
-            width: 90.0625%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
         }
 
-        picture {
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90.0625%;
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            max-width: (517/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title,
+        .cs-text {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-text {
+            opacity: 0.8;
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #000;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
 
             &:before {
-                z-index: 1;
+                content: "";
                 position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #fff;
+                opacity: 1;
                 top: 0;
                 left: 0;
-                content: "";
-                opacity: 0.7;
-                display: block;
-                background: #000;
-                height: 100%;
-                width: 100%;
+                z-index: -1;
+                border-radius: (4/16rem);
+                transition: width 0.3s;
             }
-        }
-        &:before {
-            display: none;
-        }
-        &:after {
-            z-index: -3;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            content: "";
-            opacity: 1;
-            transform: translateX(-50%);
-            display: block;
-            background: url("/assets/svgs/cta-squares.svg");
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: (1108/16rem);
-            width: (2000/16rem);
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
         }
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #cta {
-            &:after {
-                display: none;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cta-403 {
+        .cs-background {
+            /* clips the black slant so it doesnt overflow */
+            &:before {
+                width: 40%;
+                opacity: 1;
             }
+
+            img {
+                width: 100%;
+                object-position: right;
+                left: auto;
+                right: 0;
+            }
+        }
+
+        .cs-container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            text-align: left;
+            align-items: flex-start;
+            width: 45%;
+        }
+
+        .cs-text,
+        .cs-title {
+            margin-left: 0;
         }
     }
 }
+                                
 
 /*-- -------------------------- -->
 <---           Footer           -->
