@@ -81,8 +81,8 @@ eleventyNavigation:
 <section id="hero-1951">
     <picture class="cs-bg">
         <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 375, height: 667}) | webp({quality: 50}) %}">
-        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}">
-        <img decoding="async" src="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="pancake" aria-hidden="true">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+        <img decoding="async" src="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 1415, height: 722}) | webp %}" alt="pancake" aria-hidden="true">
     </picture>
     <div class="cs-container">
         <div class="cs-content">
@@ -160,7 +160,8 @@ eleventyNavigation:
         <div class="cs-content">
             <h2 class="cs-title">Why I Became a Therapist</h2>
             <p class="cs-text">
-                Over the past decade, I've worked in a variety of roles where my task was to create a safe space. From outdoor education to adventure therapy and residential settings, I noticed how difficult it was for people to find momentum or settle into goal-focused work when they did not feel regulated in their environment. We live in a fast-paced world and I aim to create and calm environment, whether we meet virtually, in-person, or in nature, so you can slow down and work on what matters to you most.            </p>
+                Over the past decade, I've worked in a variety of roles where my task was to create a safe space. From outdoor education to adventure therapy and residential settings, I noticed how difficult it was for people to find momentum or settle into goal-focused work when they did not feel regulated in their environment. We live in a fast-paced world and I aim to create and calm environment, whether we meet virtually, in-person, or in nature, so you can slow down and work on what matters to you most.           
+            </p>
             <a href="" class="cs-button-solid">Get to Know Me</a>
         </div>
         <div class="cs-image-group">
@@ -249,7 +250,7 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/svgs/individual.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">Individual Therapy</h3>
                     <p class="cs-item-text">
@@ -260,7 +261,7 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/svgs/eye.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">EMDR</h3>
                     <p class="cs-item-text">
@@ -271,7 +272,7 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/svgs/outdoors.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">Outdoor Offerings</h3>
                     <p class="cs-item-text">
@@ -282,7 +283,7 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fkitchen-free.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/svgs/trauma.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">Trauma Therapy</h3>
                     <p class="cs-item-text">
@@ -311,7 +312,7 @@ eleventyNavigation:
         <ul class="cs-card-group">
             <li class="cs-item">
                 <h3 class="cs-h3">
-                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why1.svg" alt="icon" width="24" height="24">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/layer1.svg" alt="icon" width="24" height="24">
                     7 Years of Experience
                 </h3>
                 <p class="cs-item-text">
@@ -320,7 +321,7 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">
-                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why2.svg" alt="icon" width="24" height="24">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/license.svg" alt="icon" width="24" height="24">
                     Vermont Licensed Clinical Mental Health Counselor
                 </h3>
                 <p class="cs-item-text">
@@ -329,7 +330,7 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">
-                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why3.svg" alt="icon" width="24" height="24">
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/emdr 1.svg" alt="icon" width="24" height="24">
                     EMDR Trained
                 </h3>
                 <p class="cs-item-text">
@@ -347,8 +348,8 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">
-                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why4.svg" alt="icon" width="24" height="24">
-                    Unlimited Edits
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/community.svg" alt="icon" width="24" height="24">
+                    In-Person Availability
                 </h3>
                 <p class="cs-item-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
@@ -356,26 +357,129 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">
-                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why5.svg" alt="icon" width="24" height="24">
-                    Web Design & Develop
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/insurance-2-1.svg" alt="icon" width="24" height="24">
+                    Accepts Insurance
                 </h3>
                 <p class="cs-item-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                    Blue Cross Blue Shield & Medicaid/Green Mountain Care
                 </p>
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">
-                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/why6.svg" alt="icon" width="24" height="24">
-                    Google Analytics
+                    <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/question.svg" alt="icon" width="24" height="24">
+                    Have a Question for me?
                 </h3>
                 <p class="cs-item-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam, repudiandae.
+                    Reach out today.
                 </p>
             </li>
         </ul>
-        <a href="" class="cs-button-solid">Discover More</a>
+        <a href="" class="cs-button-solid">Learn More</a>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-2070">
+    <picture class="cs-bg">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 375, height: 995}) | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+        <img decoding="async" src="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="pancake" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 278, height: 189}) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 480, height: 358}) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 480, height: 358}) | webp %}" alt="leaves on the ground">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Here are Some</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">
+                Everything you need to know to get started with therapy.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Where are you located?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            My office is located in downtown Burlington in the One Main Landing building at the Waterfront. It is easily accessible via public transportation and there is easily available metered parking.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Do you accept my insurance?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            I accept Blue Cross Blue Shield network plans and Medicaid/Green Mountain Care (Vermont). If you have another insurance plan, or prefer to pay out-of-pocket, I am able to provide a Superbill for possible reimbursement from you plan's out-of-network benefits.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Who do you work with?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            I work with younger adults, age 18 - mid-30's. Many of my clients are University students living in the Burlington area. I also work individuals experiencing transitions in their relationships, careers, and other life circumstances.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are some techniques or therapeutic approaches you use in your practice?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            My primary counseling modalities are EMDR, IFS informed, and Trauma-Focused Cognitive Behavioral Therapy. My work is fundamentally attachment-based. Together, we look at past and present attachment relationships to understand the interplay between our lived experiences and current beliefs and behaviors. I help clients establish a working set of skills they can utilize between sessions and build upon over time.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What does your client intake process look like?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            My intake process involves an initial 15-minute virtual meeting for us both to decide if we would be a good fit working together. From there, I schedule an initial session and send you intake paperwork through an easy-to-use portal. During our first few sessions, we will get to know each other more, discussing your presenting concerns and establishing treatment goals.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+                                
                                 
 
                                 

@@ -89,7 +89,7 @@
     --primary: #ff6a3e;
     --primaryLight: #F1BDB9;
     --secondary: #ffba43;
-    --secondaryLight: #ffba43;
+    --secondaryLight: #F90;
     --headerColor: #6A425D;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #fafbfc;
@@ -953,7 +953,8 @@ html {
     padding: 0.75rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    color: var(--headerColor);
+    color: #4E4B66;
+    font-weight: 500;
     display: block;
     transition: color 0.3s, background-color 0.3s;
   }
@@ -996,10 +997,10 @@ html {
     color: var(--headerColor);
   }
   body.scroll #cs-navigation .cs-li-link {
-    color: var(--headerColor);
+    color: #4E4B66;
   }
   body.scroll #cs-navigation .cs-li-link.cs-active {
-    color: var(--primary);
+    color: var(--headerColor);
   }
   body.scroll #cs-navigation .cs-li:hover .cs-li-link {
     color: var(--primary);
@@ -1186,17 +1187,18 @@ html {
     line-height: 1.5rem;
     text-decoration: none;
     margin: 0;
-    color: var(--headerColor);
+    color: #4E4B66;
     display: flex;
     align-items: center;
     position: relative;
     transition: color 0.3s;
+    font-weight: 700;
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--primary);
   }
   #cs-navigation .cs-li-link.cs-active {
-    color: var(--primary);
+    color: var(--headerColor);
   }
   #cs-navigation .cs-button-solid {
     font-size: 1rem;
@@ -1399,7 +1401,7 @@ html {
     color: #000;
     min-width: 9.375rem;
     padding: 0 1.5rem;
-    background-color: var(--primary);
+    background-color: var(--secondaryLight);
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
@@ -1412,7 +1414,7 @@ html {
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #fff;
+    background: var(--primaryLight);
     opacity: 1;
     top: 0;
     left: 0;
