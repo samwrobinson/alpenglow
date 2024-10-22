@@ -1,5 +1,5 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
+title: 'Contact | Alpenglow Counseling'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
@@ -22,78 +22,71 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
+        <h1 id="home-h">My Approach</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 750, height: 400}) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}" alt="Fallen leaves" loading="eager">
         </picture>
     </section>
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
 
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
 
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
+<section id="contact-401">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-form" id="cs-form-401"
+            data-heyform-id="InlnG0LG"
+            data-heyform-type="standard"
+            data-heyform-custom-url="https://heyform.net/f/InlnG0LG"
+            data-heyform-width-type="%"
+            data-heyform-width="100"
+            data-heyform-height-type="px"
+            data-heyform-height="500"
+            data-heyform-auto-resize-height="true"
+            >
             </div>
+            <script src="https://www.unpkg.com/@heyform-inc/embed@latest/dist/index.umd.js"></script>
         </div>
-    </section>
+        <div class="cs-right">
+            <!-- Create new map image in figma and place pin where you want it and save the group as an image and place here-->
+            <picture class="cs-map">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map+pin.png">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map+pin.png">
+                <img decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map+pin.png" alt="map" width="610" height="425">
+            </picture>
+            <ul class="cs-contact-group">
+                <li class="cs-item">
+                    <span class="cs-header">Contact Information</span>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-grey2.svg" alt="icon" width="24" height="24">
+                    <span class="cs-hours">Monday To Friday (9am - 5pm)</span>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-grey2.svg" alt="icon" width="24" height="24">
+                    <a href="tel:555-456 7899" class="cs-link">(555) 456 7898</a>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail-grey2.svg" alt="icon" width="24" height="24">
+                    <a href="mailto:info@example.com" class="cs-link">info@example.com</a>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-grey2.svg" alt="icon" width="24" height="24">
+                    <a href="" class="cs-link">121 King St, Melbourne VIC, Australia</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 375, height: 995}) | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+        <img decoding="async" src="{% getUrl "/assets/images/hero-bg.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="paper-texture" aria-hidden="true">
+    </picture>
+</section>
+                                
 {% endblock %}
