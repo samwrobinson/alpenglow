@@ -374,6 +374,7 @@
     font-size: 3.8125rem;
     line-height: 1.2em;
     font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
     /* 16px - 24px */
     margin: 0 0 clamp(1rem, 2.4vw, 1.5rem);
     color: var(--headerColor);
@@ -383,6 +384,7 @@
   #steps-1661 .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.2em;
     font-weight: 700;
     margin: 0 0 1rem 0;
@@ -393,6 +395,7 @@
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
     color: var(--bodyTextColor);
   }
 }
