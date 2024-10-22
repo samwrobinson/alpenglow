@@ -22,7 +22,7 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">My Approach</h1>
+        <h1 id="home-h">Contact Amber</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 750, height: 400}) | webp %}">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}">
@@ -30,6 +30,87 @@ eleventyNavigation:
         </picture>
     </section>
 
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1661">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">My Approach</span>
+            <h2 class="cs-title">How To Get Started</h2>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-image.png" | resize({width: 686, height: 600, position: "attention" }) | webp %}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-image.png" | resize({width: 1472, height: 660, position: "attention" }) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/contact-image.png" | resize({width: 1472, height: 660, position: "attention" }) | webp %}" alt="Amber and moxie in a field">
+            </picture>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">01</span>
+                <h3 class="cs-h3">Schedule a Virtual Introduction</h3>
+                <p class="cs-item-text">
+                    Schedule a free 15 minute consult call to determine if we are a good fit.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">02</span>
+                <h3 class="cs-h3">Initial Intake Session</h3>
+                <p class="cs-item-text">
+                    Discuss presenting concerns and identify treatment goals.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">03</span>
+                <h3 class="cs-h3">Schedule Session Frequency</h3>
+                <p class="cs-item-text">
+                    Weekly, biweekly, in-person, or virtual sessions available.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<!-- No headers, so no section tag -->
+<div id="contact-strip-324">
+    <ul class="cs-stat-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="/assets/svgs/call.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Phone</span>
+                <a href="tel:555-456-7899" class="cs-link">(802) 279 1030</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="/assets/svgs/location pin.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Address</span>
+                <a href="" class="cs-link">1 Main Street <br> Suite 308 <br> Burlington, VT 05401</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="/assets/svgs/clock.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Open Hours</span>
+                <span class="cs-hours">Tuesday To Friday</span>
+                <span class="cs-hours">9:00 AM - 5:00 PM</span>
+            </div>
+        </li>
+    </ul>
+</div>
+                                
 
 <!-- ============================================ -->
 <!--                   Contact                    -->
@@ -53,30 +134,28 @@ eleventyNavigation:
         </div>
         <div class="cs-right">
             <!-- Create new map image in figma and place pin where you want it and save the group as an image and place here-->
-            <picture class="cs-map">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map+pin.png">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map+pin.png">
-                <img decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map+pin.png" alt="map" width="610" height="425">
-            </picture>
+            <div id="map-1403">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.9259655868955!2d-73.22216892319908!3d44.475690271074996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cca7afa5b5f8da3%3A0xc917aa716282f2f5!2s1%20Main%20St%20UNIT%20308%2C%20Burlington%2C%20VT%2005401!5e0!3m2!1sen!2sus!4v1729593195764!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <ul class="cs-contact-group">
                 <li class="cs-item">
                     <span class="cs-header">Contact Information</span>
                 </li>
                 <li class="cs-item">
                     <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-grey2.svg" alt="icon" width="24" height="24">
-                    <span class="cs-hours">Monday To Friday (9am - 5pm)</span>
+                    <span class="cs-hours">Tuesday To Friday (9am - 5pm)</span>
                 </li>
                 <li class="cs-item">
                     <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-grey2.svg" alt="icon" width="24" height="24">
-                    <a href="tel:555-456 7899" class="cs-link">(555) 456 7898</a>
+                    <a href="tel:555-456 7899" class="cs-link">(802) 279 1030</a>
                 </li>
                 <li class="cs-item">
                     <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail-grey2.svg" alt="icon" width="24" height="24">
-                    <a href="mailto:info@example.com" class="cs-link">info@example.com</a>
+                    <a href="mailto:info@example.com" class="cs-link">amber@alpenglowcounselingvt.com</a>
                 </li>
                 <li class="cs-item">
                     <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-grey2.svg" alt="icon" width="24" height="24">
-                    <a href="" class="cs-link">121 King St, Melbourne VIC, Australia</a>
+                    <a href="" class="cs-link">1 Main Street, Suite 308, Burlington, VT 05401</a>
                 </li>
             </ul>
         </div>

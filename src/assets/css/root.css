@@ -137,6 +137,9 @@
     color: var(--headerColor);
     position: relative;
   }
+  #home-h {
+    font-family: 'Montserrat', sans-serif;
+  }
   .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;

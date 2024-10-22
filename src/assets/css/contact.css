@@ -39,6 +39,11 @@
     flex-direction: column;
     gap: 3.25rem;
   }
+  #contact-401 #map-1403 {
+    overflow: hidden;
+    width: 100%;
+    max-height: 300px;
+  }
   #contact-401 .cs-content {
     text-align: left;
   }
@@ -48,6 +53,7 @@
   #contact-401 .cs-form {
     max-width: 39.375rem;
     width: 100%;
+    min-height: 400px;
     max-height: 500px;
     padding: clamp(1rem, 2.3vw, 1.5rem);
     border-radius: 1.5rem;
@@ -258,6 +264,9 @@
     min-width: 28.125rem;
     min-height: 37.5rem;
   }
+  #contact-401 #map-1403 {
+    max-height: 400px;
+  }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 64rem) {
@@ -291,5 +300,223 @@
   #contact-401 .cs-item:nth-of-type(4),
   #contact-401 .cs-item:nth-of-type(5) {
     width: 19.125rem;
+  }
+}
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-1661 {
+    padding: var(--sectionPadding);
+  }
+  #steps-1661 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-1661 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #steps-1661 .cs-title {
+    /* 28px - 40px */
+    margin-bottom: clamp(1.75rem, 3vw, 2.5rem);
+  }
+  #steps-1661 .cs-picture {
+    width: 100%;
+    /* 320px - 600px */
+    height: clamp(18.75rem, 43vw, 37.5rem);
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #steps-1661 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #steps-1661 .cs-card-group {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #steps-1661 .cs-item {
+    list-style: none;
+    text-align: left;
+    padding: 0 0 1.5rem 0;
+    margin: 0;
+    border-bottom: 1px solid var(--primary);
+    /* prevents border from affecting height and width */
+    box-sizing: border-box;
+    grid-column: span 12;
+  }
+  #steps-1661 .cs-item:last-of-type {
+    padding: 0;
+    border: none;
+  }
+  #steps-1661 .cs-number {
+    font-size: 3.8125rem;
+    line-height: 1.2em;
+    font-weight: 900;
+    /* 16px - 24px */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.5rem);
+    color: var(--headerColor);
+    opacity: 0.6;
+    display: block;
+  }
+  #steps-1661 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #steps-1661 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cs-navigation {
+    width: 100vw;
+  }
+  #cs-navigation #interior-header {
+    max-width: 100vw;
+    background-color: #fff;
+    margin: 0;
+  }
+  #steps-1661 .cs-container {
+    max-width: 80rem;
+  }
+  #steps-1661 .cs-item {
+    /* 24px - 32px */
+    padding: 0 clamp(1.5rem, 3vw, 2rem);
+    grid-column: span 4;
+    border-bottom: 0;
+    border-left: 1px solid var(--primary);
+  }
+  #steps-1661 .cs-item:last-of-type {
+    padding: 0 clamp(1.5rem, 3vw, 2rem);
+    border-left: 1px solid var(--primary);
+  }
+}
+/*-- -------------------------- -->
+<---           Stats            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-strip-324 {
+    padding: var(--sectionPadding);
+    background: linear-gradient(0deg, rgba(106, 66, 93, 0.8) 0%, rgba(106, 66, 93, 0.6) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+  #contact-strip-324 .cs-stat-group {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 37.5rem;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  #contact-strip-324 .cs-item {
+    list-style: none;
+    width: 18.125rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #contact-strip-324 .cs-item:hover .cs-picture {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.05);
+  }
+  #contact-strip-324 .cs-picture {
+    width: 5rem;
+    height: 5rem;
+    /* 12px - 20px */
+    margin-right: clamp(0.75rem, 3vw, 1.25rem);
+    border-radius: 50%;
+    border: 1px solid #f90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.6s;
+  }
+  #contact-strip-324 .cs-flex-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #contact-strip-324 .cs-icon {
+    width: 1.75rem;
+    height: auto;
+  }
+  #contact-strip-324 .cs-header {
+    font-size: 1.25rem;
+    color: var(--secondaryLight);
+    font-weight: 900;
+    line-height: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  #contact-strip-324 .cs-link,
+  #contact-strip-324 .cs-hours {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--secondaryLight);
+    font-family: 'Poppins', sans-serif;
+    display: block;
+  }
+  #contact-strip-324 .cs-link:hover {
+    text-decoration: underline;
+  }
+}
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #contact-strip-324 .cs-stat-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+    row-gap: 2rem;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-strip-324 .cs-stat-group {
+    max-width: 80rem;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
 }
