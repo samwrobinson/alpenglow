@@ -137,9 +137,6 @@
     color: var(--headerColor);
     position: relative;
   }
-  #home-h {
-    font-family: 'Montserrat', sans-serif;
-  }
   .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
@@ -648,6 +645,9 @@ html {
   #cs-navigation .cs-active .cs-line3 {
     bottom: 100%;
     opacity: 0;
+  }
+  #cs-navigation .cs-button-solid {
+    display: none;
   }
   #cs-navigation .cs-box {
     /* 24px - 28px */
@@ -1432,6 +1432,9 @@ html {
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #cta-403 .cs-background {
+    /* clips the black slant so it doesnt overflow */
+  }
   #cta-403 .cs-background:before {
     width: 40%;
     opacity: 1;
