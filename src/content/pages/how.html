@@ -13,6 +13,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/how.css">
+    <link rel="stylesheet" href="/assets/css/approach.css">
 {% endblock %}
 
 {% block body %}
@@ -155,6 +156,46 @@ eleventyNavigation:
         <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-bg.png" alt="background" height="932" width="1920" loading="lazy" decoding="async">
     </picture>
 </section>
+
+<div id="content-page-1945">
+    <section class="cs-content-default">
+            <picture class="cs-bg">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 375, height: 995}) | webp %}">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+                <img decoding="async" src="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="paper-texture" aria-hidden="true">
+            </picture>
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Together we can</span>
+                    <h1 class="cs-title">Step Into Change</h1>
+                    <p>
+                        I believe that every individual’s journey is unique, and so is the path to healing. Whether you’re struggling with anxiety, trauma, or a difficult life transition, my goal is to empower you to find clarity and resilience. Together, we’ll work at a pace that feels right for you, in a non-judgmental environment that fosters self-discovery and personal growth.
+                    </p>
+                    <p>
+                        Change can bring up feeling of uncertainty and even fear. I work with clients to understand the origins of their relationship to change and provide strategies for preparing to make meaningful change. Whether you're looking to change the way you communicate with others in your life or shift your connection to self, our work together can help you course correct and stay on track.
+                    </p>
+                    <h3>Together we will explore change by:</h3>
+                    <ol>
+                        <li><strong>Understanding</strong>  your readiness for change.</li>
+                        <li><strong>Discovering</strong> what motivates you to try something different.</li>
+                        <li><strong>Identifying</strong> challenges related to executive functioning including task initiation, planning, organization, and execution.</li>
+                        <li><strong>Unpacking</strong> the origins of your core beliefs and how they relate to change.</li>
+                    </ol>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vermont-snow.jpg" | resize({width: 620, height: 420}) | webp %}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vermont-snow.jpg" | resize({width: 822, height: 1200}) | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/vermont-snow.jpg" | resize({width: 822, height: 1200}) | webp %}" alt="Snowy Vermont mountain">
+                    </picture>
+                    <img class="cs-graphic cs-blob" loading="lazy" decoding="async"  src="{% getUrl "/assets/images/pink-blob.png" | resize({width: 278, height: 205}) | webp %}" alt="graphic" width="528" height="468" aria-hidden="true">
+                    <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="{% getUrl "/assets/images/logo.png" | resize({width: 238, height: 238}) | webp %}" alt="graphic" width="175" height="143" aria-hidden="true">
+                </div>
+            </div>
+        </section>
+</div>
                                 
 
 

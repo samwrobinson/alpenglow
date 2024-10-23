@@ -116,25 +116,58 @@ eleventyNavigation:
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
 <section id="contact-401">
     <div class="cs-container">
         <div class="cs-content">
-            <div class="cs-form" id="cs-form-401"
-            data-heyform-id="InlnG0LG"
-            data-heyform-type="standard"
-            data-heyform-custom-url="https://heyform.net/f/InlnG0LG"
-            data-heyform-width-type="%"
-            data-heyform-width="100"
-            data-heyform-height-type="px"
-            data-heyform-height="500"
-            data-heyform-auto-resize-height="true"
-            >
-            </div>
-            <script src="https://www.unpkg.com/@heyform-inc/embed@latest/dist/index.umd.js"></script>
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-401" name="Contact Form" method="post" onsubmit="sendEmail(event)">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-401" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-401" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="tel" id="phone-401" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="message" id="message-401" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
+            </form>
+            
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init('kQWrYzRn8HkHVew9Y'); // Replace with your EmailJS Public Key
+                })();
+            
+                function sendEmail(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_negf23j', 'template_4l20ick', '#cs-form-401')
+                        .then(function(response) {
+                            alert('Your message was sent successfully!');
+                        }, function(error) {
+                            alert('Failed to send the message. Please try again.');
+                        });
+                }
+            </script>
+            
+            
         </div>
         <div class="cs-right">
             <!-- Create new map image in figma and place pin where you want it and save the group as an image and place here-->
-            <div id="map-1403">
+            <div class="cs-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.9259655868955!2d-73.22216892319908!3d44.475690271074996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cca7afa5b5f8da3%3A0xc917aa716282f2f5!2s1%20Main%20St%20UNIT%20308%2C%20Burlington%2C%20VT%2005401!5e0!3m2!1sen!2sus!4v1729593195764!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <ul class="cs-contact-group">

@@ -45,34 +45,29 @@
             flex-direction: column;
             gap: (52/16rem);
         }
-        #map-1403 {
-            overflow: hidden;
-            width: 100%;
-            max-height: 300px;
-        }
 
         .cs-content {
             text-align: left;
         }
 
         .cs-title {
-            color: var(--bodyTextColorWhite);
+            color: var(--headerColor);
         }
 
         .cs-form {
-            max-width: 39.375rem;
-            width: 100%;
-            min-height: 400px;
-            max-height: 500px;
-            padding: clamp(1rem, 2.3vw, 1.5rem);
-            border-radius: 1.5rem;
-            background-color: #484848;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: (12/16rem);
         }
 
         .cs-label {
             font-size: (14/16rem);
             width: 100%;
-            color: var(--bodyTextColorWhite);
+            color: var(--headerColor);
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -84,12 +79,13 @@
             font-size: (16/16rem);
             width: 100%;
             height: (56/16rem);
+            font-family: 'Poppins', sans-serif;
             padding: 0;
             padding-left: (24/16rem);
             border-radius: (8/16rem);
             color: var(--headerColor);
-            background-color: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(15px);
+            background-color: rgba(106, 66, 93, 0.25);
+            backdrop-filter: blur(22.5px);
             border: none;
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
@@ -117,8 +113,7 @@
             color: #fff;
             min-width: (150/16rem);
             padding: 0 (24/16rem);
-            background-color: var(--primary);
-            border-radius: (4/16rem);
+            background-color: var(--headerColor);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -149,8 +144,8 @@
         .cs-submit {
             text-transform: uppercase;
             width: (283/16rem);
-            background-color: var(--primary);
-            color: var(--headerColor);
+            background-color: var(--headerColor);
+            color: #fff;
             border: none;
             transition: color 0.3s;
 
@@ -221,6 +216,7 @@
             margin-right: auto;
             margin-bottom: (16/16rem);
             color: #fff;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .cs-icon {
@@ -231,11 +227,12 @@
         .cs-link,
         .cs-hours {
             /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            font-size: clamp(0.775rem, 1vw, 1rem);
             line-height: 1.5em;
             text-decoration: none;
             color: var(--bodyTextColorWhite);
             transition: color 0.3s;
+            font-family: 'Poppins', sans-serif;
         }
 
         .cs-link {
@@ -252,6 +249,7 @@
         .cs-container {
             max-width: (1280/16rem);
             flex-direction: row;
+            justify-content: space-between;
             /* 44px - 80px */
             gap: clamp(2.75rem, 7vw, 5rem);
         }
@@ -267,14 +265,8 @@
         }
 
         .cs-right {
-            min-width: (288/16rem);
-            width: 100%;
-        }
-
-        .cs-form {
             min-width: (360/16rem);
             width: 100%;
-            min-height: 480px;
         }
 
         .cs-map {
@@ -300,17 +292,6 @@
             width: 51.6%;
             /* prevent flexbox from squishing it */
             flex: none;
-        }
-
-        .cs-form {
-            width: 100%;
-            /* prevent flexbox from squishing it */
-            min-width: (450/16rem);
-            min-height: (600/16rem);
-        }
-
-        #map-1403 {
-            max-height: 400px;
         }
     }
 }
@@ -356,6 +337,7 @@
         }
     }
 }
+                                
 
 /*-- -------------------------- -->
 <---           Steps            -->

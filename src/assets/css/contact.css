@@ -39,30 +39,25 @@
     flex-direction: column;
     gap: 3.25rem;
   }
-  #contact-401 #map-1403 {
-    overflow: hidden;
-    width: 100%;
-    max-height: 300px;
-  }
   #contact-401 .cs-content {
     text-align: left;
   }
   #contact-401 .cs-title {
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
   }
   #contact-401 .cs-form {
-    max-width: 39.375rem;
-    width: 100%;
-    min-height: 400px;
-    max-height: 500px;
-    padding: clamp(1rem, 2.3vw, 1.5rem);
-    border-radius: 1.5rem;
-    background-color: #484848;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
   }
   #contact-401 .cs-label {
     font-size: 0.875rem;
     width: 100%;
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,12 +68,13 @@
     font-size: 1rem;
     width: 100%;
     height: 3.5rem;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     padding-left: 1.5rem;
     border-radius: 0.5rem;
     color: var(--headerColor);
-    background-color: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(15px);
+    background-color: rgba(106, 66, 93, 0.25);
+    backdrop-filter: blur(22.5px);
     border: none;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
@@ -104,8 +100,7 @@
     color: #fff;
     min-width: 9.375rem;
     padding: 0 1.5rem;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
+    background-color: var(--headerColor);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -131,8 +126,8 @@
   #contact-401 .cs-submit {
     text-transform: uppercase;
     width: 17.6875rem;
-    background-color: var(--primary);
-    color: var(--headerColor);
+    background-color: var(--headerColor);
+    color: #fff;
     border: none;
     transition: color 0.3s;
   }
@@ -196,6 +191,7 @@
     margin-right: auto;
     margin-bottom: 1rem;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
   }
   #contact-401 .cs-icon {
     width: 1.5rem;
@@ -204,11 +200,12 @@
   #contact-401 .cs-link,
   #contact-401 .cs-hours {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: clamp(0.775rem, 1vw, 1rem);
     line-height: 1.5em;
     text-decoration: none;
     color: var(--bodyTextColorWhite);
     transition: color 0.3s;
+    font-family: 'Poppins', sans-serif;
   }
   #contact-401 .cs-link:hover {
     color: var(--secondaryLight);
@@ -219,6 +216,7 @@
   #contact-401 .cs-container {
     max-width: 80rem;
     flex-direction: row;
+    justify-content: space-between;
     /* 44px - 80px */
     gap: clamp(2.75rem, 7vw, 5rem);
   }
@@ -231,13 +229,8 @@
     margin-left: 0;
   }
   #contact-401 .cs-right {
-    min-width: 18rem;
-    width: 100%;
-  }
-  #contact-401 .cs-form {
     min-width: 22.5rem;
     width: 100%;
-    min-height: 480px;
   }
   #contact-401 .cs-map {
     /* 250px - 400px */
@@ -257,15 +250,6 @@
     width: 51.6%;
     /* prevent flexbox from squishing it */
     flex: none;
-  }
-  #contact-401 .cs-form {
-    width: 100%;
-    /* prevent flexbox from squishing it */
-    min-width: 28.125rem;
-    min-height: 37.5rem;
-  }
-  #contact-401 #map-1403 {
-    max-height: 400px;
   }
 }
 /* Large Desktop - 1300px */

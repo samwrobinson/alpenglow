@@ -1,16 +1,16 @@
 module.exports = {
-    "name": "Alpenglow Counseling",
+    "name": "Alpenglow Counseling, PLLC",
     "email": "amber.banta@gmail.com",
-    "phoneForTel": "805-300-2506",
-    "phoneFormatted": "(805) 300-2506",
+    "phoneForTel": "802-276-1030",
+    "phoneFormatted": "(802) 276-1030",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Waterbury",
+        "lineOne": "1 Main Street",
+        "lineTwo": "Suite 308",
+        "city": "Burlington",
         "state": "VT",
-        "zip": "05671",
+        "zip": "05401",
         "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "mapLink": "https://maps.app.goo.gl/H4XuihJkQGn5VVmk7"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
