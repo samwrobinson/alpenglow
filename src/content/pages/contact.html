@@ -157,6 +157,7 @@ eleventyNavigation:
                     emailjs.sendForm('service_negf23j', 'template_4l20ick', '#cs-form-401')
                         .then(function(response) {
                             alert('Your message was sent successfully!');
+                            document.getElementById('cs-form-401').reset();
                         }, function(error) {
                             alert('Failed to send the message. Please try again.');
                         });
