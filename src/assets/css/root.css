@@ -646,9 +646,6 @@ html {
     bottom: 100%;
     opacity: 0;
   }
-  #cs-navigation .cs-button-solid {
-    display: none;
-  }
   #cs-navigation .cs-box {
     /* 24px - 28px */
     width: clamp(1.5rem, 2vw, 1.75rem);
@@ -780,6 +777,9 @@ html {
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--primary);
+  }
+  #cs-navigation .cs-button-solid {
+    display: none;
   }
   #cs-navigation .cs-button-solid {
     display: none;
