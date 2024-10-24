@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Alpenglow Counseling, PLLC",
-    "email": "amber.banta@gmail.com",
+    "email": "amber@alpenglowcounselingvt.com",
     "phoneForTel": "802-276-1030",
     "phoneFormatted": "(802) 276-1030",
     "address": {

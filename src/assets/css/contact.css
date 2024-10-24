@@ -64,6 +64,17 @@
     align-items: flex-start;
     gap: 0.25rem;
   }
+  #contact-401 .cs-label-2 {
+    font-size: 0.875rem;
+    width: 100%;
+    color: var(--headerColor);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
   #contact-401 .cs-input {
     font-size: 1rem;
     width: 100%;
@@ -200,7 +211,7 @@
   #contact-401 .cs-link,
   #contact-401 .cs-hours {
     /* 14px - 16px */
-    font-size: clamp(0.775rem, 1vw, 1rem);
+    font-size: clamp(0.775rem, 1vw, 0.8rem);
     line-height: 1.5em;
     text-decoration: none;
     color: var(--bodyTextColorWhite);
