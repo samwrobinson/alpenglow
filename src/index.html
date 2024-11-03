@@ -104,13 +104,13 @@ eleventyNavigation:
         </div>
         <div class="cs-image-group">
             <picture class="cs-picture cs-left">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 164, height: 323}) | webp %}">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 164, height: 323}) | webp({quality: 50}) %}">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 302, height: 594}) | webp %}">
                 <img decoding="async" src="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 302, height: 594}) | webp %}" alt="Mountain at sunset" aria-hidden="true">
             </picture>
             <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/highlight.svg" alt="icon" width="169" height="100" loading="lazy" decoding="async">
             <picture class="cs-picture cs-right">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 164, height: 323}) | webp %}">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 164, height: 323}) | webp({quality: 30}) %}">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 302, height: 594}) | webp %}">
                 <img decoding="async" src="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 302, height: 594}) | webp %}" alt="Another Mountain at Sunset" aria-hidden="true">
             </picture>
