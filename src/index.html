@@ -1,7 +1,7 @@
 ---
 title: 'Therapy in Central Vermont | Alpenglow Counseling | Burlington, VT'
 description: 'Find compassionate therapy in Central Vermont with Alpenglow Counseling. Offering trauma-informed care, EMDR therapy, and support for life transitions, anxiety, and depression. In-person sessions in Burlington, VT, or virtual counseling available. Start your healing journey today.'
-preloadImg: '/assets/images/landing.jpg'
+preloadImg: '/assets/images/logo.png'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -104,13 +104,13 @@ eleventyNavigation:
         </div>
         <div class="cs-image-group">
             <picture class="cs-picture cs-left">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 164, height: 323}) | webp({quality: 50}) %}">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 164, height: 323}) | webp({quality: 60}) %}">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 302, height: 594}) | webp %}">
                 <img decoding="async" src="{% getUrl "/assets/images/hero-left.jpeg" | resize({width: 302, height: 594}) | webp %}" alt="Mountain at sunset" aria-hidden="true">
             </picture>
             <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/highlight.svg" alt="icon" width="169" height="100" loading="lazy" decoding="async">
             <picture class="cs-picture cs-right">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 164, height: 323}) | webp({quality: 30}) %}">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 164, height: 323}) | webp({quality: 60}) %}">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 302, height: 594}) | webp %}">
                 <img decoding="async" src="{% getUrl "/assets/images/hero-right.jpeg" | resize({width: 302, height: 594}) | webp %}" alt="Another Mountain at Sunset" aria-hidden="true">
             </picture>
@@ -177,9 +177,9 @@ eleventyNavigation:
         <div class="cs-image-group">
             <!--Top left image-->
             <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/moxie-amber-barn.jpeg" | resize({width: 380, height: 460}) | webp %}">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/moxie-amber-barn.jpeg" | resize({width: 800, height: 1000}) | webp %}">
-                <img decoding="async" src="{% getUrl "/assets/images/moxie-amber-barn.jpeg" | resize({width: 800, height: 1000}) | webp %}" alt="pancake" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/moxie-amber-barn.jpeg" | resize({width: 379, height: 459}) | webp %}">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/moxie-amber-barn.jpeg" | resize({width: 634, height: 890}) | webp %}">
+                <img decoding="async" src="{% getUrl "/assets/images/moxie-amber-barn.jpeg" | resize({width: 634, height: 890}) | webp %}" alt="pancake" aria-hidden="true">
             </picture>
             <!--Top Right image-->
             <picture class="cs-picture cs-picture2">
@@ -213,7 +213,7 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture cs-picture1">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 686, height: 656}) | webp %}">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 686, height: 656}) | webp({quality: 30}) %}">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 590, height: 680}) | webp %}">
             <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/white-mt-1.jpeg" | resize({width: 590, height: 680}) | webp %}" alt="White mountains at golden hour.">
@@ -226,7 +226,7 @@ eleventyNavigation:
         </div>
         <picture class="cs-picture cs-picture2">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 686, height: 656}) | webp %}">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 686, height: 656}) | webp({quality: 30}) %}">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 590, height: 680}) | webp %}">
             <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/white-mt-2.jpeg" | resize({width: 590, height: 680}) | webp %}" alt="White mountains at sunset.">
