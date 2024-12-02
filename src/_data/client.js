@@ -4,11 +4,11 @@ module.exports = {
     "phoneForTel": "802-276-1030",
     "phoneFormatted": "(802) 276-1030",
     "address": {
-        "lineOne": "1 Main Street",
-        "lineTwo": "Suite 308",
-        "city": "Burlington",
+        "lineOne": "65 S.",
+        "lineTwo": "Main Street",
+        "city": "Waterbury",
         "state": "VT",
-        "zip": "05401",
+        "zip": "05671",
         "country": "US",
         "mapLink": "https://maps.app.goo.gl/H4XuihJkQGn5VVmk7"
     },
