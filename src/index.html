@@ -1,6 +1,6 @@
 ---
-title: 'Therapy in Central Vermont | Alpenglow Counseling | Burlington, VT'
-description: 'Find compassionate therapy in Central Vermont with Alpenglow Counseling. Offering trauma-informed care, EMDR therapy, and support for life transitions, anxiety, and depression. In-person sessions in Burlington, VT, or virtual counseling available. Start your healing journey today.'
+title: 'Therapy in Central Vermont | Alpenglow Counseling | Waterbury, VT'
+description: 'Find compassionate therapy in Central Vermont with Alpenglow Counseling. Offering trauma-informed care, EMDR therapy, and support for life transitions, anxiety, and depression. In-person sessions in Waterbury, VT, or virtual counseling available. Start your healing journey today.'
 preloadImg: '/assets/images/logo.png'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
@@ -84,6 +84,29 @@ eleventyNavigation:
 
 {% block body %}
 
+<!-- Using Liquid/Nunjucks templating for 11ty -->
+{% if banner.show_banner %}
+<div id="popup-2064">
+    <div class="cs-container">
+        <button class="cs-close">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/cookie-close.svg" alt="close" width="16" height="16">
+        </button>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <h3 class="cs-h3">Client Intake Status</h3>
+                <p class="cs-text">
+                    {{ banner.message }}
+                    {% if banner.waitlist_link %}
+                    <a class="cs-link" href="{{ banner.waitlist_link }}">Join our waitlist</a>
+                    {% endif %}
+                </p>
+            </div>
+            <a  href="/contact/" class="cs-button-solid cs-accept">Contact</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+
 <!-- ============================================ -->
 <!--                     Hero                     -->
 <!-- ============================================ -->
@@ -128,7 +151,7 @@ eleventyNavigation:
             <span class="cs-topper">About Me</span>
             <h2 class="cs-title">Finding a Path Forward</h2>
             <p class="cs-text">
-                Rooted in the Green Mountains of Vermont, my therapy practice provides a space for individuals to have their lived experiences mirrored back to them with new tools and insight. I offer in-person counseling in downtown Burlington, Vermont, virtual appointments, and seasonal outdoor sessions.
+                Rooted in the Green Mountains of Vermont, my therapy practice provides a space for individuals to have their lived experiences mirrored back to them with new tools and insight. I offer in-person counseling in downtown Waterbury, Vermont, virtual appointments, and seasonal outdoor sessions.
             </p>
             <picture class="cs-picture cs-picture1">
                 <!--Mobile Image-->
@@ -414,7 +437,7 @@ eleventyNavigation:
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            My office is located in downtown Burlington in the One Main Landing building at the Waterfront. It is easily accessible via public transportation and there is easily available metered parking.
+                            My office is located in downtown Waterbury in the One Main Landing building at the Waterfront. It is easily accessible via public transportation and there is easily available metered parking.
                         </p>
                     </li>
                     <li class="cs-faq-item">
@@ -440,7 +463,7 @@ eleventyNavigation:
                             </span>
                         </button>
                         <p class="cs-item-p">
-                            I work with younger adults, age 18 - mid-30's. Many of my clients are University students living in the Burlington area. I also work individuals experiencing transitions in their relationships, careers, and other life circumstances.
+                            I work with younger adults, age 18 - mid-30's. Many of my clients are University students living in the Waterbury area. I also work individuals experiencing transitions in their relationships, careers, and other life circumstances.
                         </p>
                     </li>
                     <li class="cs-faq-item">
@@ -473,7 +496,60 @@ eleventyNavigation:
             </div>
         </div>
     </div>
-</section>                       
+</section>  
+
+<script>
+    // Modified for client acceptance banner - keeps same positioning as cookie popup
+    document.addEventListener('DOMContentLoaded', function () {
+        const popup = document.getElementById('popup-2064');
+        const closeButton = document.querySelector('.cs-close');
+        const acceptButton = document.querySelector('.cs-accept');
+        
+        // Exit if popup doesn't exist (banner not enabled in CMS)
+        if (!popup) return;
+        
+        // Check if the user has already dismissed the banner recently
+        if (!localStorage.getItem('clientBannerDismissed')) {
+            // Set the popup to block, so we can apply the cs-show class and animate the popup into view
+            popup.style.display = "block";
+            // Set the popup to appear after a set period of time (default: 1000ms/1s).
+            setTimeout(function () {
+                popup.classList.add('cs-show');
+            }, 1000);
+        } else {
+            // Check if it's been more than 7 days since dismissal
+            const dismissedDate = parseInt(localStorage.getItem('clientBannerDismissed'));
+            const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
+            
+            if (dismissedDate < sevenDaysAgo) {
+                // Show again after 7 days
+                popup.style.display = "block";
+                setTimeout(function () {
+                    popup.classList.add('cs-show');
+                }, 1000);
+            }
+        }
+        
+        // Function to close the popup. Add timestamp to localStorage to track when dismissed.
+        function closePopup() {
+            popup.classList.remove('cs-show');
+            localStorage.setItem('clientBannerDismissed', Date.now().toString());
+            // Removes the popover from the screen (visibly and through screen readers) after the transition (0.3s - in the CSS) has finished
+            setTimeout(function () {
+                popup.style.display = "none";
+            }, 300);
+        }
+        
+        // Close button event listener
+        closeButton.addEventListener('click', closePopup);
+        
+        // Accept button event listener
+        acceptButton.addEventListener('click', () => {
+            closePopup();
+        });
+    });
+    </script>
+    
                         
     {% include 'components/cta.html' %}
 {% endblock %}

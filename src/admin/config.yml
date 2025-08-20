@@ -3,13 +3,13 @@ backend:
     branch: main
 
 local_backend: true
-# change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://codestitch.app/frontend/images/logo.png
+logo_url: https://alpenglowcounselingvt.com/assets/images/logo.png
 
 media_folder: "src/assets/images/blog"
 public_folder: "/assets/images/blog"
 
 collections:
+    # Blog Collection
     - name: "blog"
       label: "Blog"
       folder: "src/content/blog"
@@ -30,3 +30,15 @@ collections:
           - { label: "Featured Image", name: "image", widget: "image" }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+    
+    # Settings Collection for Banner
+    - name: "settings"
+      label: "Site Settings"
+      files:
+          - name: "banner"
+            label: "Client Acceptance Banner"
+            file: "src/_data/banner.json"
+            fields:
+                - {label: "Show Banner", name: "show_banner", widget: "boolean", default: false}
+                - {label: "Banner Message", name: "message", widget: "text", default: "We are not currently accepting new clients. Please check back later or join our waitlist for future openings."}
+                - {label: "Waitlist Link (optional)", name: "waitlist_link", widget: "string", required: false}

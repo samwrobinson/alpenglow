@@ -1971,3 +1971,135 @@ html {
         }
     }
 }
+
+/*-- -------------------------- -->
+<---           Popup            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #popup-2064 {
+        max-width: (842/16rem);
+        /* 16px - 48px*/
+        padding: (40/16rem) clamp(1rem, 7vw, 3rem);
+        background-color: #f3fcfb;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        opacity: 0;
+        border-radius: (16/16rem);
+        visibility: hidden;
+        position: fixed;
+        right: 0;
+        bottom: (16/16rem);
+        z-index: 1400;
+        transform: translateY(10rem);
+        transition: transform 0.3s, opacity 0.3s;
+        &.cs-show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .cs-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .cs-content {
+            display: flex;
+            flex-direction: column;
+            gap: (24/16rem);
+        }
+        .cs-close {
+            width: (24/16rem);
+            height: (24/16rem);
+            margin-left: auto;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: (16/16rem);
+            right: (16/16rem);
+            transition: transform 0.3s;
+            &:hover {
+                cursor: pointer;
+                transform: rotate(90deg);
+            }
+        }
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 4vw, 1.5625rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0 0 (8/16rem);
+            color: var(--headerColor);
+        }
+        .cs-link {
+            font-size: (16/16rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-top: (4/16rem);
+            color: var(--secondary);
+            display: block;
+        }
+        .cs-button-solid {
+            font-size: (16/16rem);
+            font-weight: 700;
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+            height: fit-content;
+            margin: 0;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            padding: 0 (32/16rem);
+            background-color: var(--secondary);
+            overflow: hidden;
+            color: var(--bodyTextColorWhite);
+            border: none;
+            border-radius: (8/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            &:before {
+                content: "";
+                width: 0%;
+                height: 100%;
+                background: #000;
+                opacity: 1;
+                border-radius: (4/16rem);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+        .cs-accept {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #popup-2064 {
+        .cs-content {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .cs-text {
+            margin: 0;
+        }
+        .cs-link {
+            display: inline;
+        }
+    }
+}
