@@ -4,7 +4,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  .blog-container {
+  .cs-container {
     margin: auto;
     max-width: 70em;
     width: 94%;
@@ -60,7 +60,7 @@
     z-index: 1;
     position: relative;
   }
-  #header .blog-container {
+  #header .cs-container {
     padding: clamp(100px, 14vw, 200px) 0 clamp(50px, 11vw, 100px);
   }
   #header .blog-header {
@@ -192,7 +192,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  .blog-container {
+  .cs-container {
     padding: clamp(60px, 7vw, 100px) 0;
   }
   .main-content-wrapper {
@@ -230,7 +230,7 @@
     overflow: hidden;
     flex: none;
   }
-  .recent-articles .blog-mainImage {
+  .recent-articles .cs-article-image {
     position: relative;
     display: block;
     border-radius: 0.5em 0.5em 0 0;
@@ -238,7 +238,7 @@
     width: 100%;
     overflow: hidden;
   }
-  .recent-articles .blog-mainImage img {
+  .recent-articles .cs-article-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -246,12 +246,12 @@
     width: 100%;
     object-fit: cover;
   }
-  .recent-articles .article-group {
+  .recent-articles .cs-article-group {
     border: 1px solid #ebebeb;
     border-radius: 0 0 0.5em 0.5em;
     padding: clamp(30px, 5vw, 50px);
   }
-  .recent-articles .blog-author-img {
+  .recent-articles .cs-author-img {
     position: relative;
     display: block;
     border-radius: 50%;
@@ -259,7 +259,7 @@
     width: 2em;
     overflow: hidden;
   }
-  .recent-articles .blog-author-img img {
+  .recent-articles .cs-author-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -267,39 +267,39 @@
     width: 100%;
     object-fit: cover;
   }
-  .recent-articles .blog-authorGroup {
+  .recent-articles .cs-author-group {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.75rem;
   }
-  .recent-articles .blog-author,
-  .recent-articles .blog-date {
+  .recent-articles .cs-author-name,
+  .recent-articles .cs-date {
     font-size: 0.875rem;
     line-height: 1.5em;
     color: var(--bodyTextColor);
   }
-  .recent-articles .blog-dot {
+  .recent-articles .cs-dot {
     display: block;
     border-radius: 50%;
     background-color: var(--primary);
     height: 3px;
     width: 3px;
   }
-  .recent-articles .blog-h1 {
+  .recent-articles .cs-article-title {
     margin: 1rem 0;
     font-size: clamp(20px, 5vw, 32px);
     line-height: 1.4em;
     font-weight: 700;
     color: var(--headerColor);
   }
-  .recent-articles .blog-desc {
+  .recent-articles .cs-article-desc {
     margin: 1rem 0 2rem;
     font-size: 1rem;
     line-height: 1.5em;
     color: var(--bodyTextColor);
   }
-  .recent-articles .blog-link {
+  .recent-articles .cs-button-solid {
     z-index: 1;
     position: relative;
     display: inline-block;
@@ -319,7 +319,7 @@
     transition: color 0.3s;
     text-align: center;
   }
-  .recent-articles .blog-link:before {
+  .recent-articles .cs-button-solid:before {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -334,16 +334,16 @@
     box-sizing: border-box;
     transition: opacity 0.3s;
   }
-  .recent-articles .blog-link:hover {
+  .recent-articles .cs-button-solid:hover {
     color: var(--headerColor);
   }
-  .recent-articles .blog-link:hover:before {
+  .recent-articles .cs-button-solid:hover:before {
     opacity: 1;
   }
 }
 /* Mobile - 1024px */
 @media only screen and (min-width: 64rem) {
-  .recent-articles .blog-h1 {
+  .recent-articles .cs-article-title {
     max-width: 31.25rem;
   }
 }
@@ -351,8 +351,8 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode .recent-articles .blog-h1,
   body.dark-mode .recent-articles .blog-desc,
-  body.dark-mode .recent-articles .blog-author,
-  body.dark-mode .recent-articles .blog-date {
+  body.dark-mode .recent-articles .cs-author-name,
+  body.dark-mode .recent-articles .cs-date {
     color: #f7f7f7;
   }
   body.dark-mode .blog-sidebar .feature-h3,
@@ -364,8 +364,8 @@
     background: var(--primary);
   }
   body.dark-mode .blog-article .blog-h1,
-  body.dark-mode .blog-article .blog-author,
-  body.dark-mode .blog-article .blog-date {
+  body.dark-mode .blog-article .cs-author-name,
+  body.dark-mode .blog-article .cs-date {
     color: #f7f7f7;
   }
   body.dark-mode .blog-article #blog-content h1,
@@ -496,7 +496,7 @@
     max-width: 49.6875em;
     width: 100%;
   }
-  .blog-article .blog-mainImage {
+  .blog-article .cs-article-image {
     position: relative;
     display: block;
     border-radius: 0.5em;
@@ -505,7 +505,7 @@
     width: 100%;
     overflow: hidden;
   }
-  .blog-article .blog-mainImage img {
+  .blog-article .cs-article-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -513,7 +513,7 @@
     width: 100%;
     object-fit: cover;
   }
-  .blog-article .blog-author-img {
+  .blog-article .cs-author-img {
     position: relative;
     display: block;
     border-radius: 50%;
@@ -521,7 +521,7 @@
     width: 2em;
     overflow: hidden;
   }
-  .blog-article .blog-author-img img {
+  .blog-article .cs-author-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -529,26 +529,26 @@
     width: 100%;
     object-fit: cover;
   }
-  .blog-article .blog-authorGroup {
+  .blog-article .cs-author-group {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.75rem;
   }
-  .blog-article .blog-author,
-  .blog-article .blog-date {
+  .blog-article .cs-author-name,
+  .blog-article .cs-date {
     font-size: 0.875rem;
     line-height: 1.5em;
     color: var(--bodyTextColor);
   }
-  .blog-article .blog-dot {
+  .blog-article .cs-dot {
     display: block;
     border-radius: 50%;
     background-color: #fe4f70;
     height: 3px;
     width: 3px;
   }
-  .blog-article .blog-h1 {
+  .blog-article .cs-article-title {
     margin: 1rem 0;
     max-width: 34.375rem;
     font-size: clamp(20px, 5vw, 39px);

@@ -6,7 +6,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    .blog-container {
+    .cs-container {
         margin: auto;
         max-width: (1120/16em);
         width: 94%;
@@ -68,7 +68,7 @@
         z-index: 1;
         position: relative;
 
-        .blog-container {
+        .cs-container {
             padding: clamp(100px, 14vw, 200px) 0 clamp(50px, 11vw, 100px);
         }
 
@@ -217,7 +217,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    .blog-container {
+    .cs-container {
         padding: clamp(60px, 7vw, 100px) 0;
     }
 
@@ -260,7 +260,7 @@
         overflow: hidden;
         flex: none;
 
-        .blog-mainImage {
+        .cs-article-image {
             position: relative;
             display: block;
             border-radius: (8/16em) (8/16em) 0 0;
@@ -278,13 +278,13 @@
             }
         }
 
-        .article-group {
+        .cs-article-group {
             border: 1px solid #ebebeb;
             border-radius: 0 0 (8/16em) (8/16em);
             padding: clamp(30px, 5vw, 50px);
         }
 
-        .blog-author-img {
+        .cs-author-img {
             position: relative;
             display: block;
             border-radius: 50%;
@@ -302,21 +302,21 @@
             }
         }
 
-        .blog-authorGroup {
+        .cs-author-group {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: (12/16rem);
         }
 
-        .blog-author,
-        .blog-date {
+        .cs-author-name,
+        .cs-date {
             font-size: (14/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
         }
 
-        .blog-dot {
+        .cs-dot {
             display: block;
             border-radius: 50%;
             background-color: var(--primary);
@@ -324,7 +324,7 @@
             width: 3px;
         }
 
-        .blog-h1 {
+        .cs-article-title {
             margin: (16/16rem) 0;
             font-size: clamp(20px, 5vw, 32px);
             line-height: 1.4em;
@@ -332,14 +332,14 @@
             color: var(--headerColor);
         }
 
-        .blog-desc {
+        .cs-article-desc {
             margin: (16/16rem) 0 (32/16rem);
             font-size: (16/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
         }
 
-        .blog-link {
+        .cs-button-solid {
             z-index: 1;
             position: relative;
             display: inline-block;
@@ -389,7 +389,7 @@
 /* Mobile - 1024px */
 @media only screen and (min-width: 64rem) {
     .recent-articles {
-        .blog-h1 {
+        .cs-article-title {
             max-width: (500/16rem);
         }
     }
@@ -401,8 +401,8 @@
         .recent-articles {
             .blog-h1,
             .blog-desc,
-            .blog-author,
-            .blog-date {
+            .cs-author-name,
+            .cs-date {
                 color: #f7f7f7;
             }
         }
@@ -422,8 +422,8 @@
 
         .blog-article {
             .blog-h1,
-            .blog-author,
-            .blog-date {
+            .cs-author-name,
+            .cs-date {
                 color: #f7f7f7;
             }
 
@@ -573,7 +573,7 @@
         display: block;
         max-width: (795/16em);
         width: 100%;
-        .blog-mainImage {
+        .cs-article-image {
             position: relative;
             display: block;
             border-radius: (8/16em);
@@ -592,7 +592,7 @@
             }
         }
 
-        .blog-author-img {
+        .cs-author-img {
             position: relative;
             display: block;
             border-radius: 50%;
@@ -610,21 +610,21 @@
             }
         }
 
-        .blog-authorGroup {
+        .cs-author-group {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: (12/16rem);
         }
 
-        .blog-author,
-        .blog-date {
+        .cs-author-name,
+        .cs-date {
             font-size: (14/16rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
         }
 
-        .blog-dot {
+        .cs-dot {
             display: block;
             border-radius: 50%;
             background-color: #fe4f70;
@@ -632,7 +632,7 @@
             width: 3px;
         }
 
-        .blog-h1 {
+        .cs-article-title {
             margin: (16/16rem) 0;
             max-width: (550/16rem);
             font-size: clamp(20px, 5vw, 39px);

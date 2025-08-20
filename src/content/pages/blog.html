@@ -1,0 +1,87 @@
+---
+title: "Blog | Alpenglow Counseling, Located in Waterbury VT"
+description: "Meta description for the page"
+permalink: "/blog/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/blog.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Blog</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 750, height: 400}) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}" alt="Fallen leaves" loading="eager">
+        </picture>
+    </section>
+
+
+        <!-- ============================================ -->
+    <!--                 Blog Container               -->
+    <!-- ============================================ -->
+
+    <div class="cs-container">
+        <div class="main-content-wrapper">
+            
+            <!-- ============================================ -->
+            <!--                Main Content                  -->
+            <!-- ============================================ -->
+            
+            <div class="main-content">
+                <div class="recent-articles">
+                    {% if collections.post | length == 0 %}
+                        <h2 class="blog-header">No Recent Posts</h2>
+                    {% else %}
+                        {%- for post in collections.post | reverse -%}
+                            <article class="cs-article">
+                                <picture class="cs-article-image">
+                                    <!--Mobile Image-->
+                                    <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | avif %}" type="image/avif">
+                                    <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | webp %}" type="image/webp">
+                                    <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 400 }) | jpeg %}" type="image/jpeg">
+                                    <!--Tablet Image-->
+                                    <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1142, height: 614 }) | avif %}" type="image/avif">
+                                    <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1142, height: 614 }) | webp %}" type="image/webp">
+                                    <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1142, height: 614 }) | jpeg %}" type="image/jpeg">
+                                    <!--Desktop Image-->
+                                    <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | avif %}" type="image/avif">
+                                    <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | webp %}" type="image/webp">
+                                    <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | jpeg %}" type="image/jpeg">
+                                    <img src="{% getUrl post.data.image | resize({ width: 1648, height: 800 }) | jpeg %}" alt="{{ post.data.imageAlt }}" width="824" height="400" decoding="async">
+                                </picture>
+                                <div class="cs-article-group">
+                                    <div class="cs-author-group">
+                                        <picture class="cs-author-img">
+                                            <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true"/>
+                                        </picture>
+                                        <span class="cs-author-name">{{ post.data.author }}</span>
+                                        <span aria-hidden="true" class="cs-dot"></span>
+                                        <span class="cs-date">{{ post.date | postDate }}</span>
+                                    </div>
+                                    <h2 class="cs-article-title">
+                                        {{ post.data.title }}
+                                    </h2>
+                                    <p class="cs-article-desc">
+                                        {{ post.data.description }}
+                                    </p>
+                                    <a href="{{ post.url }}" class="cs-button-solid">Continue Reading</a>
+                                </div>
+                            </article>
+                        {%- endfor -%}
+                    {% endif %}
+                </div>
+            </div>
+
+        {% include 'components/featured-post.html' %}
+    </div>
+{% endblock %}
