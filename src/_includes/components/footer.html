@@ -47,6 +47,7 @@
                     </li>
                     <li>
                         <a href="/contact">
+                            {% if client.address.building %}{{client.address.building}}<br>{% endif %}
                             {{client.address.lineOne}}<br>
                             {{client.address.lineTwo}}<br>
                             {{client.address.city}}
