@@ -4,13 +4,14 @@ module.exports = {
     "phoneForTel": "802-276-1030",
     "phoneFormatted": "(802) 276-1030",
     "address": {
-        "lineOne": "65 S.",
-        "lineTwo": "Main Street",
-        "city": "Waterbury",
+        "building": "The Village Collective",
+        "lineOne": "65 Millet Street",
+        "lineTwo": "Suite 203",
+        "city": "Richmond",
         "state": "VT",
-        "zip": "05671",
+        "zip": "05477",
         "country": "US",
-        "mapLink": "https://maps.app.goo.gl/H4XuihJkQGn5VVmk7"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=65+Millet+Street+Suite+203+Richmond+VT+05477"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
