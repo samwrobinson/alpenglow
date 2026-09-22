@@ -1,2 +1,2 @@
-# Force www so canonical, GBP, and index all agree
-https://alpenglowcounselingvt.com/* https://www.alpenglowcounselingvt.com/:splat 301!
+# Canonical host is the apex. DNS has an A record on the apex only (no www),
+# and the Netlify cert covers the apex only, so do not redirect to www.
