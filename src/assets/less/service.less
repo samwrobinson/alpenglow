@@ -1,0 +1,102 @@
+/* PAGE-SPECIFIC STYLES FOR THE SERVICE LANDING PAGES */
+/* Reuses the side-by-side content stitch from the About page, plus a related-pages strip. */
+
+@import "about.less";
+@import "how.less";
+
+/* When a card section splits the page, the second wrapper reuses the stitch styles under its own id */
+#content-page-1945-b {
+    &:extend(#content-page-1945 all);
+}
+
+#why-choose-1882 + #content-page-1945-b {
+    padding-top: 0;
+}
+
+/*-- -------------------------- -->
+<---       Related Pages        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #related-pages {
+        padding: var(--sectionPadding);
+        /* 40px - 60px */
+        padding-top: clamp(2.5rem, 5vw, 3.75rem);
+        background-color: #FAF6F2;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: (24/16rem);
+        }
+
+        .cs-title {
+            /* 24px - 28px, same as body h2 */
+            font-size: clamp(1.5rem, 2.4vw, 1.75rem);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: (16/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            margin: 0;
+        }
+
+        .cs-link {
+            text-decoration: none;
+            display: block;
+            box-sizing: border-box;
+            padding: (20/16rem) (24/16rem);
+            background-color: #fff;
+            border: 1px solid #e6ddd3;
+            border-radius: (16/16rem);
+            transition: border-color 0.3s;
+
+            &:hover {
+                border-color: var(--primary);
+            }
+        }
+
+        .cs-h3 {
+            font-size: (18/16rem);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0 0 (8/16rem) 0;
+            color: var(--primary);
+        }
+
+        .cs-item-text {
+            font-size: (15/16rem);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #related-pages {
+        .cs-card-group {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

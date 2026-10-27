@@ -10,7 +10,7 @@
     #content-page-1945 {
         padding: var(--sectionPadding);
         padding-bottom: (24/16rem);
-        overflow: hidden;
+        overflow: clip;
         position: relative;
         z-index: 1;
 
@@ -51,18 +51,22 @@
         h2, h3, h4, h5, h6 {
             font-weight: 700;
             font-family: 'Montserrat', sans-serif;
+            line-height: 1.2em;
             text-align: inherit;
             margin: 0 0 (16/16rem) 0;
             color: var(--headerColor);
         }
 
         h2 {
-            font-size: (32/16rem);
+            /* 24px - 28px */
+            font-size: clamp(1.5rem, 2.4vw, 1.75rem);
             margin-top: (32/16rem);
         }
 
         h3 {
-            font-size: (24/16rem);
+            /* 20px - 24px */
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            margin-top: (16/16rem);
             color: var(--headerColor);
         }
 
@@ -91,8 +95,14 @@
                 font-size: inherit;
                 line-height: inherit;
                 text-decoration: underline;
-                color: var(--primary);
-                filter: brightness(120%);
+                text-decoration-color: var(--primary);
+                text-underline-offset: 3px;
+                color: #B5461F;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var(--primary);
+                }
             }
         }
 
@@ -274,6 +284,9 @@
             font-size: min(1.2vw, 1rem);
             display: block;
             flex: none;
+            /* follows long text columns down the page */
+            position: sticky;
+            top: (120/16rem);
         }
     }
 }

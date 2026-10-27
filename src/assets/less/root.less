@@ -93,6 +93,8 @@
     
     html {
         scroll-behavior: smooth;
+        /* in-page anchors land below the fixed header */
+        scroll-padding-top: (110/16rem);
     }
 
     body {
@@ -1519,9 +1521,10 @@ html {
             margin: 0 auto;
             margin-top: (70/16rem);
             margin-bottom: (30/16rem);
-            max-width: (500/16rem);
+            max-width: (760/16rem);
             width: 96%;
             font-size: (64/30rem);
+            line-height: 1.15em;
             color: #fff;
             text-align: center;
         }
@@ -1739,8 +1742,8 @@ html {
             .logo {
                 display: inline-block;
                 margin: auto;
-                margin-bottom: (30/16em);
-                height: (32/16em);
+                margin-bottom: (16/16em);
+                height: (56/16em);
                 width: auto;
                 text-align: center;
 
@@ -1759,6 +1762,18 @@ html {
                 line-height: (27/14rem);
                 color: #fff;
                 text-align: center;
+            }
+
+            .badge {
+                display: block;
+                width: (88/16rem);
+                margin: 0 auto;
+
+                img {
+                    display: block;
+                    width: (88/16rem);
+                    height: auto;
+                }
             }
         }
 
@@ -1817,7 +1832,7 @@ html {
                         }
                     }
 
-                    &:nth-of-type(3) {
+                    &:nth-of-type(n+2) {
                         margin-top: (50/16rem);
                         li {
                             display: flex;
@@ -1892,11 +1907,18 @@ html {
             margin: 0;
             width: (409/16rem);
             text-align: left;
+            display: flex;
+            align-items: center;
+            gap: (24/16rem);
 
             .logo {
-                margin-left: 0;
-                height: (40/16rem);
+                margin: 0;
+                height: (56/16rem);
                 text-align: left;
+            }
+
+            .badge {
+                margin: 0;
             }
 
             p {
@@ -1940,7 +1962,7 @@ html {
                             }
                         }
                     }
-                    &:nth-of-type(3) {
+                    &:nth-of-type(n+2) {
                         margin-top: 0;
 
                         li:first-of-type {

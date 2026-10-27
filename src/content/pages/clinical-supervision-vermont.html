@@ -1,0 +1,116 @@
+---
+title: 'Clinical Supervision in Vermont for LCMHC Licensure | Alpenglow Counseling'
+description: "Clinical supervision in Vermont for master's-level counselors working toward LCMHC licensure. Private-pay practice focus. Amber, LCMHC, EMDR-trained. Online statewide."
+preloadImg: '/assets/images/fall-leaves.png'
+permalink: 'clinical-supervision-vermont/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Clinical Supervision in Vermont</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 750, height: 400}) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}" alt="Fallen leaves" loading="eager">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<div id="content-page-1945">
+    <section class="cs-content-default">
+        <picture class="cs-bg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 375, height: 995}) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+            <img decoding="async" src="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="paper-texture" aria-hidden="true">
+        </picture>
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Clinical Supervision</span>
+                <h2 class="cs-title">For Pre-Licensed Clinicians</h2>
+                <p>
+                    Clinical supervision in Vermont for master's-level counselors working toward LCMHC licensure. I'm Amber, a Licensed Clinical Mental Health Counselor in Richmond, and I supervise online statewide.
+                </p>
+                <h3>Who I supervise</h3>
+                <p>
+                    Clinicians with a master's degree in counseling who are accruing post-graduate hours for Vermont licensure. My clinical background is <a href="/perinatal-mental-health-therapy-vermont/">perinatal mental health</a>, <a href="/therapy-for-college-students-vermont/">college students and emerging adults</a>, and trauma work, including <a href="/emdr-therapy-richmond-vt/">EMDR</a>. If that's near your caseload, we'll have a lot to talk about. If it isn't, that's fine too; supervision is about how you think, not just what you treat.
+                </p>
+                <h3>Building a private-pay practice</h3>
+                <p>
+                    The thing I most want to help newer clinicians with is starting a practice that doesn't tie you to insurance panels. While we remain clinically focused, we will also support you with learning to talk about fees, writing a superbill, deciding who you want to work with and saying so on your website, and getting comfortable with a smaller caseload that pays fairly. Most graduate programs don't teach any of this. We can.
+                </p>
+                <h3>Format and fees</h3>
+                <p>
+                    I offer individual supervision on a weekly basis. Many supervisees are required to receive near-weekly supervision to reach the required hours, so this is my typical structure. I meet with supervisees in-person and online. My rate is $100 per hour/weekly session.
+                </p>
+                <h3>Get in touch</h3>
+                <p>
+                    Send a short note about where you are in the licensure process and what you're looking for in a supervisor. We'll set up a call from there.
+                </p>
+                <a href="/contact#contact-401" class="cs-button-solid">Send Me a Note</a>
+                <p>
+                    Or call <a href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>.
+                </p>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/amber-barn.png" | resize({width: 620, height: 420, position: "attention"}) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/amber-barn.png" | resize({width: 822, height: 1200, position: "attention"}) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/amber-barn.png" | resize({width: 822, height: 1200, position: "attention"}) | webp %}" alt="Photo of Amber">
+                </picture>
+                <img class="cs-graphic cs-blob" loading="lazy" decoding="async"  src="{% getUrl "/assets/images/pink-blob.png" | resize({width: 278, height: 205}) | webp %}" alt="graphic" width="528" height="468" aria-hidden="true">
+                <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="{% getUrl "/assets/images/logo.png" | resize({width: 238, height: 238}) | webp %}" alt="graphic" width="175" height="143" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<!-- ============================================ -->
+<!--                Related Pages                 -->
+<!-- ============================================ -->
+
+<section id="related-pages">
+    <div class="cs-container">
+        <h2 class="cs-title">Related pages</h2>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/about/" class="cs-link">
+                    <h3 class="cs-h3">Who I Support</h3>
+                    <p class="cs-item-text">Amber's background, training, and the people she works with.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/emdr-therapy-richmond-vt/" class="cs-link">
+                    <h3 class="cs-h3">EMDR Therapy in Richmond, VT</h3>
+                    <p class="cs-item-text">Trauma-focused EMDR, in person and online.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/how/" class="cs-link">
+                    <h3 class="cs-h3">How I Can Help</h3>
+                    <p class="cs-item-text">Every service, in one place.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

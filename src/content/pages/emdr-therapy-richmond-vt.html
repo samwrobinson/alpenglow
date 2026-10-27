@@ -1,0 +1,146 @@
+---
+title: 'EMDR Therapy in Richmond, VT and Online in Vermont | Alpenglow Counseling'
+description: "EMDR therapy in Richmond, VT with Amber, LCMHC. Trauma-focused EMDR for birth trauma, perinatal loss, and family-of-origin wounds. In person or online across Vermont. Free consult."
+preloadImg: '/assets/images/fall-leaves.png'
+permalink: 'emdr-therapy-richmond-vt/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">EMDR Therapy in Richmond, VT</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 750, height: 400}) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}">
+            <img aria-hidden="true" decoding="async" src="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}" alt="Fallen leaves" loading="eager">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<div id="content-page-1945">
+    <section class="cs-content-default">
+        <picture class="cs-bg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 375, height: 995}) | webp %}">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp %}">
+            <img decoding="async" src="{% getUrl "/assets/images/paper-texture.jpeg" | resize({width: 1415, height: 722}) | webp({quality: 70}) %}" alt="paper-texture" aria-hidden="true">
+        </picture>
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">EMDR</span>
+                <h2 class="cs-title">Trauma-Focused Therapy</h2>
+                <p>
+                    EMDR therapy in Richmond, VT for trauma that won't stay in the past. I'm Amber, LCMHC, EMDR-trained, and I offer EMDR in person at The Village Collective and online across Vermont.
+                </p>
+                <h3>What EMDR is</h3>
+                <p>
+                    EMDR stands for Eye Movement Desensitization and Reprocessing. In plain terms, it's a structured way of helping your brain finish processing an experience that got stuck. You focus briefly on a memory while following a back-and-forth movement, and over a series of sessions the memory loses its charge. You still remember what happened. It stops running your nervous system.
+                </p>
+                <p>
+                    EMDR is used most often for trauma, and it's one of the better-studied approaches for it. It works for single events and for the slow, repeated kind of hurt that happened growing up.
+                </p>
+                <h3>Who I use EMDR with</h3>
+                <p>
+                    Most of my EMDR work is with the two groups I see most. For <a href="/perinatal-mental-health-therapy-vermont/">new and expecting parents</a>, that's often a frightening birth, a loss, or the way a pregnancy brought back something from their own childhood. For <a href="/therapy-for-college-students-vermont/">college students</a>, it's usually family-of-origin material that surfaced once they left home.
+                </p>
+                <p>
+                    I don't use EMDR with everyone, and I don't use it in the first session. We build enough steadiness first that the processing has somewhere safe to land.
+                </p>
+
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/xc-tracks.jpeg" | resize({width: 620, height: 420, position: "attention"}) | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/xc-tracks.jpeg" | resize({width: 822, height: 1200, position: "attention"}) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/xc-tracks.jpeg" | resize({width: 822, height: 1200, position: "attention"}) | webp %}" alt="Cross-country ski tracks in the snow">
+                </picture>
+                <img class="cs-graphic cs-blob" loading="lazy" decoding="async"  src="{% getUrl "/assets/images/pink-blob.png" | resize({width: 278, height: 205}) | webp %}" alt="graphic" width="528" height="468" aria-hidden="true">
+                <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="{% getUrl "/assets/images/logo.png" | resize({width: 238, height: 238}) | webp %}" alt="graphic" width="175" height="143" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-content-wrapper cs-content-reverse">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Working Together</span>
+                <h2 class="cs-title">Cross-country ski EMDR sessions</h2>
+                <p>
+                    In the winter months I offer cross-country ski sessions that integrate EMDR. Bilateral movement is a key processing component of EMDR, and skiing is a rhythmic, repetitive, left-right motion that can support reprocessing while you're outside and moving. It isn't for every client or every session, but for the right person it's a very different way to do this work. Ask me about it on the consult call.
+                </p>
+                <h3>What sessions look like</h3>
+                <p>
+                    In our early sessions, we look at your history, your goals for therapy, and getting you settled in to the process. When we start EMDR proper, sessions follow a set structure and I'll walk you through it before we begin. Online EMDR works well and is how most of my clients do it; I'll show you how the bilateral part works over video. In person, I'm in Richmond one day a week.
+                </p>
+                <h3>Getting started</h3>
+                <p>
+                    We start with a free 15-minute video call to see if we're a fit and whether EMDR makes sense for what you're carrying.
+                </p>
+                <p>
+                    Ready to talk?
+                </p>
+                <a href="/contact#contact-401" class="cs-button-solid">Schedule a Free 15-Minute Consult</a>
+                <p>
+                    Or call <a href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>.
+                </p>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/vermont-snow.jpg" | resize({width: 620, height: 420, position: "attention"}) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/vermont-snow.jpg" | resize({width: 1340, height: 680, position: "attention"}) | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/vermont-snow.jpg" | resize({width: 1340, height: 680, position: "attention"}) | webp %}" alt="Snowy Vermont mountain">
+                </picture>
+                <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/lotsa-dots.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+                <img class="cs-graphic cs-peach-right" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-peach.svg" alt="graphic" width="56" height="42" aria-hidden="true">
+                <img class="cs-graphic cs-leaf-right" loading="lazy" decoding="async" src="{% getUrl "/assets/images/logo.png" | resize({width: 238, height: 238}) | webp %}" alt="graphic" width="179" height="225" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ============================================ -->
+<!--                Related Pages                 -->
+<!-- ============================================ -->
+
+<section id="related-pages">
+    <div class="cs-container">
+        <h2 class="cs-title">Related pages</h2>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/perinatal-mental-health-therapy-vermont/" class="cs-link">
+                    <h3 class="cs-h3">Perinatal Mental Health Therapy in Vermont</h3>
+                    <p class="cs-item-text">Pregnancy, postpartum, infertility, and loss.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/pregnancy-loss-therapist-vermont/" class="cs-link">
+                    <h3 class="cs-h3">Pregnancy Loss Therapist in Vermont</h3>
+                    <p class="cs-item-text">Miscarriage, stillbirth, and infertility grief.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/therapy-for-college-students-vermont/" class="cs-link">
+                    <h3 class="cs-h3">Therapy for College Students in Vermont</h3>
+                    <p class="cs-item-text">First-year adjustment, family of origin, ADHD and executive functioning.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

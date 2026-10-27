@@ -1,6 +1,6 @@
 ---
-title: 'My Approach | Narrative Therapy, Parts Work & EMDR in Richmond, VT | Alpenglow Counseling'
-description: "Amber's therapeutic approach at Alpenglow Counseling in Richmond, VT and online across Vermont: Narrative Therapy, Parts Work, and EMDR for anxiety, trauma, grief, and life transitions. Clinical supervision for pre-licensed LCMHCs in Vermont."
+title: 'How I Can Help | Therapy Services in Richmond, VT and Online | Alpenglow Counseling'
+description: "Every service Alpenglow Counseling offers in Richmond, VT and online across Vermont: perinatal mental health, postpartum support, pregnancy loss, therapy for college students, EMDR, and clinical supervision."
 preloadImg: '/assets/images/fall-leaves.png'
 permalink: 'how/'
 eleventyNavigation:
@@ -12,16 +12,6 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7P4HXSS6Z"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-Q7P4HXSS6Z');
-    </script>
-
     <link rel="stylesheet" href="/assets/css/how.css">
     <link rel="stylesheet" href="/assets/css/approach.css">
 {% endblock %}
@@ -33,7 +23,7 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">My Approach</h1>
+        <h1 id="home-h">How I Can Help</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 750, height: 400}) | webp %}">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/fall-leaves.png" | resize({width: 1200, height: 450}) | webp %}">
@@ -78,7 +68,7 @@ eleventyNavigation:
                 </p>
                 <h3>EMDR</h3>
                 <p>
-                    EMDR is a trauma-focused therapy that uses bilateral stimulation (such as eye movements or taps) to help the brain reprocess distressing memories and reduce symptoms of PTSD, anxiety and panic linked to specific events, complicated grief, trauma-related guilt and shame, and some phobias.
+                    EMDR is a trauma-focused therapy that uses bilateral stimulation (such as eye movements or taps) to help the brain reprocess distressing memories and reduce symptoms of PTSD, anxiety and panic linked to specific events, complicated grief, trauma-related guilt and shame, and some phobias. <a href="/emdr-therapy-richmond-vt/">Read more about EMDR therapy in Richmond, VT.</a>
                 </p>
             </div>
             <div class="cs-image-group">
@@ -105,14 +95,9 @@ eleventyNavigation:
                 <span class="cs-topper">For Pre-Licensed Clinicians</span>
                 <h2 class="cs-title">Clinical Supervision</h2>
                 <p>
-                    I offer weekly supervision for LCMHC candidates working towards their licensing hours in Vermont — a supportive space to explore your lived experiences as you grow into your role as a therapist.
+                    For master's-level counselors working toward Vermont licensure, with a private-pay practice focus. I offer individual supervision on a weekly basis, and I meet with supervisees in-person and online.
                 </p>
-                <h3>In supervision, we focus on:</h3>
-                <ul>
-                    <li>Honing your therapeutic style and modalities</li>
-                    <li>Aligning your personal and professional trajectories</li>
-                    <li>Building toward a career in ethical, cash-based, private practice</li>
-                </ul>
+                <a href="/clinical-supervision-vermont/" class="cs-button-solid">Clinical Supervision in Vermont</a>
             </div>
             <div class="cs-image-group">
                 <!-- PLACEHOLDER IMAGE (reused existing asset) — swap for a Clinical Supervision photo -->
@@ -137,61 +122,72 @@ eleventyNavigation:
     <picture class="cs-bg">
         <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/moxie-amber-road.jpeg" | resize({width: 375, height: 995, position: "bottom" }) | webp %}">
         <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/moxie-amber-road.jpeg" | resize({width: 1415, height: 722, position: "bottom" }) | webp %}">
-        <img decoding="async" src="{% getUrl "/assets/images/moxie-amber-road.jpeg" | resize({width: 1415, height: 722, position: "bottom" }) | webp({quality: 70}) %}" alt="paper-texture" aria-hidden="true">
+        <img decoding="async" src="{% getUrl "/assets/images/moxie-amber-road.jpeg" | resize({width: 1415, height: 722, position: "bottom" }) | webp({quality: 70}) %}" alt="background" aria-hidden="true">
     </picture>
     <div class="cs-container">
         <div class="cs-content">
-            <h2 class="cs-title">My Clients Often Struggle With</h2>
+            <span class="cs-topper">Working With Me</span>
+            <h2 class="cs-title">Services</h2>
             <p class="cs-text">
-                Many of my clients come to me feeling overwhelmed, disconnected, or unsure of how to navigate the complexities of life. Whether it's anxiety, unresolved trauma, or feeling lost in life transitions, these are challenges we can work through together in a safe, supportive space.
+                Each service has its own page. Sessions are in person at The Village Collective in Richmond one day a week and by video anywhere in Vermont the rest of the week.
             </p>
         </div>
-        <ul class="cs-card-group">
+        <ul class="cs-card-group cs-three">
             <li class="cs-item">
-                <div class="cs-item-group">
-                    <img class="cs-icon"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/derma-icon-heart.svg"
-                        loading="lazy" decoding="async" alt="heart icon" width="33" height="38" aria-hidden="true">
-                    <h3 class="cs-h3">Anxiety & Depression</h3>
-                </div>
-                <p class="cs-item-text">
-                    I provide a compassionate, non-judgmental space where you can explore your thoughts and emotions, helping you work through feelings of anxiety and depression with care and support.
-                </p>
+                <a href="/perinatal-mental-health-therapy-vermont/" class="cs-link">
+                    <div class="cs-item-group">
+                        <img class="cs-icon" src="/assets/svgs/profile-woman.svg" loading="lazy" decoding="async" alt="heart icon" width="33" height="38" aria-hidden="true">
+                        <h3 class="cs-h3">Perinatal mental health</h3>
+                    </div>
+                    <p class="cs-item-text">Pregnancy, postpartum, infertility, and loss, from trying to conceive through the first year.</p>
+                </a>
             </li>
             <li class="cs-item">
-                <div class="cs-item-group">
-                    <img class="cs-icon"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/derma-icon-palette.svg"
-                        loading="lazy" decoding="async" alt="palette icon" width="33" height="38" aria-hidden="true">
-                    <h3 class="cs-h3">ADHD & Executive Functioning</h3>
-                </div>
-                <p class="cs-item-text">
-                    My tailored approach includes tools and strategies designed to help you improve focus, organization, and executive functioning, empowering you to navigate life’s challenges.
-                </p>
+                <a href="/postpartum-therapist-vermont/" class="cs-link">
+                    <div class="cs-item-group">
+                        <img class="cs-icon" src="/assets/svgs/individual.svg" loading="lazy" decoding="async" alt="heart icon" width="33" height="38" aria-hidden="true">
+                        <h3 class="cs-h3">Postpartum anxiety and depression</h3>
+                    </div>
+                    <p class="cs-item-text">For new parents who feel like something is off and want to understand why.</p>
+                </a>
             </li>
             <li class="cs-item">
-                <div class="cs-item-group">
-                    <img class="cs-icon"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/derma-icon-people.svg"
-                        loading="lazy" decoding="async" alt="people icon" width="33" height="38" aria-hidden="true">
-                    <h3 class="cs-h3">Trauma, PTSD & Grief</h3>
-                </div>
-                <p class="cs-item-text">
-                    Through trauma-informed therapy, we can work together to process painful memories, cope with grief, and rebuild your sense of safety, control, and peace.
-                </p>
+                <a href="/pregnancy-loss-therapist-vermont/" class="cs-link">
+                    <div class="cs-item-group">
+                        <img class="cs-icon" src="/assets/svgs/community.svg" loading="lazy" decoding="async" alt="people icon" width="33" height="38" aria-hidden="true">
+                        <h3 class="cs-h3">Miscarriage, stillbirth, and infertility</h3>
+                    </div>
+                    <p class="cs-item-text">Grief the people around you may not see.</p>
+                </a>
             </li>
             <li class="cs-item">
-                <div class="cs-item-group">
-                    <img class="cs-icon"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/derma-icon-plan.svg" loading="lazy"
-                        decoding="async" alt="plan icon" width="33" height="38" aria-hidden="true">
-                    <h3 class="cs-h3">Life Transitions</h3>
-                </div>
-                <p class="cs-item-text">
-                    Whether you’re navigating a career change, a relationship shift, or another significant life transition, I’m here to support you in building resilience and finding clarity on your path forward.
-                </p>
+                <a href="/therapy-for-college-students-vermont/" class="cs-link">
+                    <div class="cs-item-group">
+                        <img class="cs-icon" src="/assets/svgs/outdoors.svg" loading="lazy" decoding="async" alt="palette icon" width="33" height="38" aria-hidden="true">
+                        <h3 class="cs-h3">Therapy for college students</h3>
+                    </div>
+                    <p class="cs-item-text">First-year adjustment, family of origin, ADHD and executive functioning.</p>
+                </a>
             </li>
-        </ul>        
+            <li class="cs-item">
+                <a href="/emdr-therapy-richmond-vt/" class="cs-link">
+                    <div class="cs-item-group">
+                        <img class="cs-icon" src="/assets/svgs/eye.svg" loading="lazy" decoding="async" alt="plan icon" width="33" height="38" aria-hidden="true">
+                        <h3 class="cs-h3">EMDR</h3>
+                    </div>
+                    <p class="cs-item-text">Trauma-focused EMDR in Richmond and online, including winter cross-country ski sessions.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/clinical-supervision-vermont/" class="cs-link">
+                    <div class="cs-item-group">
+                        <img class="cs-icon" src="/assets/svgs/license.svg" loading="lazy" decoding="async" alt="people icon" width="33" height="38" aria-hidden="true">
+                        <h3 class="cs-h3">Clinical supervision</h3>
+                    </div>
+                    <p class="cs-item-text">For master's-level counselors working toward Vermont licensure, with a private-pay practice focus.</p>
+                </a>
+            </li>
+        </ul>
     </div>
     <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-bg.png">
